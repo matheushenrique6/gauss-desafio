@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémons</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Pokémons</h1>
+        <input type="text" id="filter" placeholder="Buscar por qualquer campo..." >
+        <div class="table-wrapper">
+        <table id="pokemon-table">
+            <thead>
+              <tr>
+                <th>Imagem</th>
+                <th>Nome</th>
+                <th>Altura (m)</th>
+                <th>Peso (kg)</th>
+                <th>Exp Base</th>
+                <th>Tipos</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+          
+        <div class="pagination">
+            <button onclick="changePage(-1)">Anterior</button>
+            <span id="page-indicator">Página 1</span>
+            <button onclick="changePage(1)">Próxima</button>
+        </div>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>

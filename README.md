@@ -1,56 +1,37 @@
-# Desafio Técnico
+# Projeto Pokémon API
 
-## Objetivo
+Este projeto consiste em uma API desenvolvida com **FastAPI** e um frontend simples em HTML, CSS e JavaScript. Ele consome dados da PokéAPI e os exibe em uma interface web com funcionalidades de filtro, ordenação e paginação.
 
-Avaliar a sua capacidade em consumir dados de uma API pública, manipular e exibir essas informações em uma interface com funcionalidades de ordenação, filtro e paginação.
+## Requisitos
 
-## Descrição do Desafio
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
 
-Você deverá desenvolver uma aplicação web simples que consuma dados de uma **API pública de sua escolha** (sugestões abaixo) e exiba essas informações em uma **tabela interativa**.
+## Estrutura do Projeto
 
-### A interface deve conter:
+ ├── app/ # Backend FastAPI ├── frontend/ # Frontend HTML/CSS/JS com Nginx ├── pokemon.db # Banco de dados SQLite ├── Dockerfile # Dockerfile do backend ├── docker-compose.yml # Orquestração dos containers ├── requirements.txt # Dependências Python
 
-- Uma **tabela** com os dados vindos da API  
-- **Ordenação** por **todos os campos exibidos na tabela**, desde que faça sentido (ex: nome, data, número, etc)  
-- **Filtro** por **todos os campos exibidos na tabela**  
-- **Paginação** dos dados  
+## Instruções de Execução
 
-### Requisitos técnicos:
+### 1. Clonar o repositório
 
-- Pode utilizar o framework/biblioteca de sua preferência (ex: React ou Vue)  
-- O consumo da API deve ser feito via requisição HTTP (REST)  
-- A estilização pode ser simples, mas deve ser funcional e responsiva  
-- Organize o código em componentes e siga boas práticas  
+```bash
+git clone <URL_DO_REPOSITORIO>
+cd teste2
+### 2.Subir o projeto com Docker Compose
+docker-compose up --build
+### 3. Acessar a aplicação
+Frontend: http://localhost:8080
 
-## Sugestões de APIs Públicas
-Lembrando que você pode usar a api de sua escolha, não precisa usar nenhuma das sugestões. 
+API Docs (Swagger): http://localhost:8000/docs
 
-- [Dados de países](https://restcountries.com/)   
-- [Personagens de Rick and Morty](https://rickandmortyapi.com/)
-- [Pokémon](https://pokeapi.co/)
-- [Lista de APIs públicas](https://github.com/public-apis/public-apis?tab=readme-ov-file#index) 
+# Tecnologias Usadas
+FastAPI
 
-## Instruções de Git
+SQLite
 
-1. Faça um **fork** deste repositório no seu GitHub  
-2. Clone o repositório forkado na sua máquina  
-3. Crie uma nova **branch** para o seu desenvolvimento
-4. Realize o desenvolvimento na sua branch  
-5. Após finalizar, abra um **Pull Request** para este repositório  
+Docker & Docker Compose
 
-## Entrega
+HTML/CSS/JavaScript
 
-- O projeto deve ser entregue via **Pull Request** para este repositório  
-- Inclua um **README** com instruções de instalação/execução do projeto  
-- **Prazo de entrega: até quarta-feira (23/04) às 20h**  
-
-## Critérios que serão observados
-
-- Organização do código  
-- Clareza da interface  
-- Funcionamento dos filtros, ordenação e paginação  
-- Boas práticas de desenvolvimento
-
-### Bônus
-
-- Disponibilizar o projeto com **Docker**, com instruções de execução no README
+Nginx
