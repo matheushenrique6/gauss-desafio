@@ -29,8 +29,10 @@ A aplicação busca dados da PokéAPI, armazena num banco SQLite local e exibe t
    cd projeto-pokemon/
    
 2. Suba os containers:
+    ```bash
    docker-compose up --build
-3. Acesse:
+    
+4. Acesse:
 
 🖥️ Frontend: http://localhost:8080
 
