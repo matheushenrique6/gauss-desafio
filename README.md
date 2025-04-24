@@ -50,5 +50,3 @@ A aplicação busca dados da PokéAPI, armazena num banco SQLite local e exibe t
 
 🧭 Nginx
 
-📜 Licença
-Distribuído sob a licença MIT. Veja LICENSE para mais detalhes.
